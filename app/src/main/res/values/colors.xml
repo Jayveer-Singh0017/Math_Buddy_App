@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="titleBar_color">#757f9a</color>
+    <color name="Color_Title_text">#c471ed</color>
+
+<!--    color for mainActivity button -->
+    <color name="color_sum">#69d2e7</color>
+    <color name="color_sub">#ffbc11</color>
+    <color name="color_mul">#f2d680</color>
+    <color name="color_div">#d31900</color>
+</resources>

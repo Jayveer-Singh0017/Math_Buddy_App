@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Math Buddy</string>
+    <string name="Heading">Welcome to My Math Buddy ☺️</string>
+    <string name="creator">Created By MR.SINGH</string>
+    <string name="sum">SUM</string>
+    <string name="sub">SUBTRACT</string>
+    <string name="mul">MULTIPLY</string>
+    <string name="div">DIVIDE</string>
+
+
+    <!--    // for sum Activity -->
+    <string name="cal_sum">Calculate Sum</string>
+<!--     for sub_Activity-->
+    <string name="cal_sub">Calculate Subtract</string>
+
+<!--    for mul Activity-->
+    <string name="cal_mul">Caluculate Multiply</string>
+<!--    for div Activity-->
+    <string name="cal_div">Calculate Divide</string>
+
+    <string name="clearBtn">Clear</string>
+
+</resources>
