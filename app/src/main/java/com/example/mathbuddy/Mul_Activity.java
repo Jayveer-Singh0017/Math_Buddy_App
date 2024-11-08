@@ -38,10 +38,20 @@ public class Mul_Activity extends AppCompatActivity {
         cal_mul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                double number1 = Double.parseDouble(num1.getText().toString());
-                double number2 = Double.parseDouble(num2.getText().toString());
-                double mul = number1 * number2;
-                resultText1.setText(""+mul);
+               
+                String str1 = num1.getText().toString();
+                String str2 = num2.getText().toString();
+
+                if(!str1.isEmpty() && !str2.isEmpty()){
+
+                    double number1 = Double.parseDouble(num1.getText().toString());
+                    double number2 = Double.parseDouble(num2.getText().toString());
+                    double mul = number1 * number2;
+                    resultText1.setText(""+mul);
+
+                }else {
+                    resultText1.setText("Please enter the valid details.");
+                }
             }
         });
 
