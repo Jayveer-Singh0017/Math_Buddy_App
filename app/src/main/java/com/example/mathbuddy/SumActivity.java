@@ -37,13 +37,19 @@ public class SumActivity extends AppCompatActivity {
         calculateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(num1 == null && num2 == null){
-                    result.setText("Please the enter the numbers.");
+                   String str1 = num1.getText().toString();
+                String str2 = num2.getText().toString();
+
+                if(!str1.isEmpty() && !str2.isEmpty() ) {
+
+                    double number1 = Double.parseDouble(num1.getText().toString());
+                    double number2 = Double.parseDouble(num2.getText().toString());
+                    double sum = number1 + number2;
+                    result.setText("" + sum);
+                }else{
+                    result.setText("Please enter the Valid details.");
                 }
-                long number1 = Long.parseLong(num1.getText().toString());
-                long number2 = Long.parseLong(num2.getText().toString());
-                long sum = number1+number2;
-                result.setText(""+sum);
+
             }
         });
 
