@@ -35,13 +35,17 @@ public class Sub_Activity extends AppCompatActivity {
         cal_sub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 number1 = Integer.parseInt(num1.getText().toString());
-                 number2 = Integer.parseInt(num2.getText().toString());
-//                 if(number1 == 0 && number2 == 0){
-//                     resultText.setText("Please enter the numbers.");
-//                 }
-                int sub = number1 - number2;
-                resultText.setText(""+sub);
+                 String str1 = num1.getText().toString();
+                String str2 = num2.getText().toString();
+
+                if(!str1.isEmpty() && !str2.isEmpty() ) {
+                    number1 = Double.parseDouble(num1.getText().toString());
+                    number2 = Double.parseDouble(num2.getText().toString());
+                    double sub = number1 - number2;
+                    resultText.setText(""+sub);
+                }else{
+                    resultText.setText("Please enter the valid details.");
+                }
             }
         });
 
