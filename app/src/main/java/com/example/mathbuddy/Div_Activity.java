@@ -37,11 +37,20 @@ public class Div_Activity extends AppCompatActivity {
         cal_div.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
+               String str1 = num1.getText().toString();
+               String str2 = num2.getText().toString();
 
-               double number1 = Double.parseDouble(num1.getText().toString());
-               double number2 = Double.parseDouble(num2.getText().toString());
-               double div = number1/number2;
-               resutlText.setText(""+div);
+               if(!str1.isEmpty() && !str2.isEmpty()){
+
+                   double number1 = Double.parseDouble(num1.getText().toString());
+                   double number2 = Double.parseDouble(num2.getText().toString());
+                   double div = number1/number2;
+                   resutlText.setText(""+div);
+
+               }else{
+                   resutlText.setText("Please enter the valid details.");
+               }
+
 
            }
        });
